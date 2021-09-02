@@ -1,6 +1,5 @@
 package StackAndQueue;
 
-import LinkedList.INode;
 import LinkedList.Node;
 
 public class StackMain<K> {
@@ -12,6 +11,14 @@ public class StackMain<K> {
 		Stack.push(myFirstNode);
 		Stack.push(mySecondNode);
 		Stack.push(myThirdNode);
-		Stack.printStack();		
+		Stack.printStack();	
+		System.out.println("Top element in the stack is "+Stack.peak());
+		//Performing pop till stack is empty
+		Stack.pop();
+		Stack.printStack();
+		Stack.pop();
+		Stack.printStack();
+		Stack.pop();
+		Stack.printStack();
 		}
 }

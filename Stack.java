@@ -16,7 +16,17 @@ public class Stack {
 	 */
 	public void push(INode<Integer> data)
 	{
-		LinkedList.append(data);
+		LinkedList.add(data);
+	}
+	
+	//pop the top element
+	public void pop() {
+		LinkedList.pop();
+	}
+	
+	//Display the top element
+	public Integer peak() {
+		return LinkedList.head.getKey();
 	}
 	
 	// method to print elements of the stack
