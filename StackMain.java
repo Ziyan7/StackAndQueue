@@ -1,10 +1,17 @@
 package StackAndQueue;
 
-public class StackMain {
+import LinkedList.INode;
+import LinkedList.Node;
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		System.out.println("Welcome");
-	}
-
+public class StackMain<K> {
+	public static void main(String [] args) {
+		Node<Integer> myFirstNode = new Node<>(70);
+		Node<Integer> mySecondNode = new Node<>(30);
+		Node<Integer> myThirdNode = new Node<>(56);
+		Stack Stack=new Stack();
+		Stack.push(myFirstNode);
+		Stack.push(mySecondNode);
+		Stack.push(myThirdNode);
+		Stack.printStack();		
+		}
 }
