@@ -14,6 +14,13 @@ public class QueueMain {
 		Queue.enqueue(mySecondNode);
 		Queue.enqueue(myThirdNode);
 		Queue.printQueue();
+		//performing Dequeue till queue is empty
+		Queue.dequeue();
+		Queue.printQueue();
+		Queue.dequeue();
+		Queue.printQueue();
+		Queue.dequeue();
+		Queue.printQueue();
 		}
 
 	}
